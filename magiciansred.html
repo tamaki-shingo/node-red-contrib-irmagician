@@ -1,0 +1,64 @@
+<script type="text/javascript">
+    RED.nodes.registerType('irMagician play',{
+        category: 'irMagician',
+        color: '#ff5555',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:0,
+        icon: "icon.png",
+        align: "right",
+        label: function() {
+            return this.name||"irMagician play";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="irMagician play">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="irMagician play">
+    <p>irMagicianのplayコマンド実行ノード</p>
+</script>
+
+
+<script type="text/javascript">
+    RED.nodes.registerType('irMagician write',{
+        category: 'irMagician',
+        color: '#ff5555',
+        defaults: {
+            name: {value:""},
+            file: {value:"", required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "icon20x30.png",
+        align: "right",
+        label: function() {
+            return this.name||"irMagician write";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="irMagician write">
+    <div class="form-row">
+        <label for="node-input-file"><i class="icon-tag"></i> File</label>
+        <input type="text" id="node-input-file" placeholder="File">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="irMagician write">
+    <p>irMagicianのwriteコマンド実行ノードです。
+    irMagicianに書き込むためのデータをjsonで用意して、
+    ファイルパスを指定してください。
+    </p>
+</script>

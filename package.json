@@ -1,0 +1,28 @@
+{
+  "name": "node-red-contrib-irmagiciansred",
+  "version": "0.0.1",
+  "description": "node for irmagician",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "irmagician"
+  ],
+  "author": "Shingo Tamaki",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tamaki-shingo/node-red-contrib-irmagician.git"
+  },
+  "node-red": {
+    "nodes": {
+      "magiciansred": "magiciansred.js"
+    }
+  },
+  "dependencies": {
+    "irmagician": "^0.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^2.12.0"
+  }
+}
