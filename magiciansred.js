@@ -18,6 +18,7 @@ module.exports = function(RED) {
             // console.log(config);
             // console.log(this.file);
             irMagician.write(this.file)
+            node.send(msg)
         });
     }
     RED.nodes.registerType("irMagician write", write);
