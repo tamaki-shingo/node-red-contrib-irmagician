@@ -15,8 +15,8 @@ module.exports = function(RED) {
         var node = this;
         this.file = config.file;
         this.on('input', function(msg) {
-            console.log(config);
-            console.log(this.file);
+            // console.log(config);
+            // console.log(this.file);
             irMagician.write(this.file)
         });
     }
